@@ -1,0 +1,363 @@
+*{
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    height: 90%;
+    width:100%;
+    background-size: cover;
+    background-image: url("./Imgs/header.jpg");
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#first{
+    font-size: 50px;
+    margin:10px 
+}
+#second{
+    font-size: 25px;
+    margin:10px;
+    color:#ffffff9d  
+}
+#about1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    background-color:rgb(84, 208, 221) ;
+    color:#2e2d2d;
+    border:none;
+    font-size: 18px;
+}
+#about1:hover{
+    background-color: #2e2d2d;
+    color:rgb(84, 208, 221)
+}
+nav{
+    display: flex;
+    position: fixed;
+    top:0;
+    right: 0;
+    left:0;
+    font-size: 25px;
+    color:#b8b3b3;
+    width: 100%;
+    z-index: 100;
+}
+#navbar1{
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    z-index: 15;
+    transition: 2ms;
+}
+#none{
+    display: none;
+}
+#navbar{
+    align-items: end;
+    display: flex;
+    gap:10px;
+    position: absolute;
+    font-size:15px;
+    right: 10px;    
+    top:20px;
+}
+#navbar>a{
+    text-decoration: none;
+    margin-left: 20px;
+    color:#b8b3b3;
+    font-size:20px;
+}
+#navbar>a:hover{
+color:rgb(84, 208, 221);
+}
+nav>i{
+display:none;
+position: absolute;
+color:white;
+top:10px;
+right: 0;
+width: 50px;
+height: 20px;
+font-size: 25px;
+z-index: 20;
+}
+nav>i:hover{
+    color:rgb(84, 208, 221);
+}
+#navbar2{
+position: fixed; 
+display: none;
+flex-direction: column;
+border-top: 3px solid #ffffff; 
+margin-top:50px;
+height:170px;
+width: 100%;
+padding: 10px;
+z-index: 10;
+}
+#navbar2>a{
+    height:25%;
+    text-decoration: none;
+    color:#b8b3b3;
+    font-size:20px;
+    z-index: 20;
+}
+#navbar2>a:hover{
+    color:rgb(84, 208, 221);
+}
+.container {
+    position: absolute;
+    display: flex;
+    width:300px;
+    align-items:center;
+    left:30px;
+    top:20px;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent; 
+    border-right:10px solid transparent;
+    border-bottom: 20px solid rgb(84, 208, 221); 
+}
+.text {
+    margin-left: 5px; 
+}
+#buttons{
+    display: flex;
+    align-items: center;
+}
+#buttons>div>button{
+    margin-right: 10px;;
+}
+#about1{
+    width: 200px;
+    height: 50px;
+    color:#000000b8;
+    border:none;
+    font-size: 20px;
+}
+#about{
+    display: flex;
+align-items: center;   
+ flex-direction: column;
+    color: #0000008a;
+    background-color:rgb(84, 208, 221); 
+    height: 90%;
+}
+#aboutme2>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 150px;
+    margin-top:20px;
+    height: 50px;
+    background-color:#4a4949 ;
+    color:rgb(84, 208, 221);
+    border:none;
+    font-size: 18px;
+}
+#send{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 150px;
+    margin-top:20px;
+    height: 50px;
+    background-color:#4a4949 ;
+    color:rgb(84, 208, 221);
+    border:none;
+    font-size: 18px;
+}
+#send:hover{
+    opacity: 0.8;
+}
+#aboutme2>a:hover{
+ opacity: 0.7;   
+}
+#buttons>div>button{
+    width:180px;
+    height:50px;
+    background-color: #414a52;
+    border:none;
+    color:rgb(84, 208, 221);
+    font-size:18px;
+}
+#buttons>div>button:hover{
+   color: #414a52;
+    background-color:rgb(84, 208, 221);
+}
+.titletext{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 35px;
+    margin-top:150px;
+    margin-bottom: 10px;
+}
+hr{
+    width: 100px;
+    color: #0000008a ;
+    border-color:  #0000008a ;
+    height: 0.3px;
+    margin-bottom:50px ;
+}
+#aboutme{
+    width: 70%;
+    padding:30px;
+    color: #000000b8;
+    display: flex;
+    position: relative;
+}
+#aboutme2{
+    display: flex;
+    flex-direction: column;
+}
+#aboutme>img{
+    width: 50%;
+}
+#portfolio{
+    display: flex;
+    transition: 2ms;
+    height: 170%;
+    width: 100%;
+    flex-direction: column;
+    background-color:#0000008a ;
+    overflow-x: hidden;
+}
+#images{
+width: 100%;
+padding-left: 5%;
+padding-right: 5%;
+}
+.group{
+    width: 100%;
+    display: flex; 
+    gap:20px;   
+}
+.group>img{
+    width: 20%;
+    margin: 10px;
+}
+.group>img:hover{
+    opacity: 0.7;
+}
+#contact{
+    height: 80%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgb(84, 208, 221) ;
+}
+#mes{
+    height:100px;
+    width:70%;
+}
+input{
+    border:none;
+    background-color: rgba(255, 255, 255, 0.666);
+    margin:5px;
+    width: 34%;
+    height: 30px;
+    padding:10px;
+}
+#name{
+    width: 100%;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+i{
+    color:#000000c6;
+    width: 30px;
+    height: 30px;
+    margin:10px;
+}
+#copy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+width:100%;
+height:30%;
+background-color:#000000b8 ;
+color:#b8b3b3;
+}
+#ad{
+height:100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#ad>img{
+    width: 90%;
+    height: 80%;
+}
+footer{
+    height:25%;
+}
+@media (max-width:760px) {
+    #navbar{
+        display:none
+    }
+   #none{
+    display:block;
+   }
+    #container{
+        top:0;
+    }
+    #aboutme2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #second{
+        font-size:18px;
+    }
+    #aboutme{
+        flex-direction: column;
+        align-items: center;
+    }
+    #aboutme>img{
+        width: 90%;
+    }
+    #buttons{
+display:grid    
+}
+.group {
+    display: grid;
+}
+.group>img{
+    width: 90%;
+}
+#name{
+    flex-direction: column;
+}
+#name>input{
+    width: 70%;
+}
+}
+@media (min-width: 760px) and (max-width: 1000px) {
+    .group>img{
+width: 70%;
+    }
+    .group{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;   
+    }
+}

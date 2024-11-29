@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./Imgs/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CSS-HTML template</title>
+</head>
+<body>
+    <header id="home">
+        <p id="first"style="font-size: 50px;margin:10px;">SPECTRUM</p>
+        <p id="second">Web Design • Photography • Product Design</p>
+        <a href="#about" id="about1">LEARN MORE</a>
+    </header>
+    <nav>
+        <i class="fa fa-bars" onclick="menu()" id="none"></i>
+        <div id="navbar1">
+        <div class="container">
+            <div class="triangle"></div>
+            <p class="text">SPECTRUM</p>
+        </div>
+        <div id="navbar">
+<a href="#home" id="home10">HOME</a>            
+<a href="#about" id="about10">ABOUT</a>            
+<a href="#portfolio" id="portfolio10">PORTFOLIO</a>            
+<a href="#contact" id="contact10">CONTACT</a>       
+        </div>
+        <div id="navbar2">
+            <a href="#home" id="home11">HOME</a>            
+            <a href="#about" id="about11">ABOUT</a>            
+            <a href="#portfolio" id="portfolio11">PORTFOLIO</a>            
+            <a href="#contact" id="contact11">CONTACT</a>   
+        </div>
+            </div>
+        </div>
+      </nav>
+      <main id="main">
+        <section id="about">
+<p class="titletext">About Me</p>
+<hr/>
+<div id="aboutme">
+    <img src="./Imgs/about.jpg" style="margin-right:30px;">
+    <div id="aboutme2">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.<br/><br/><br/>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
+    <a href="#portfolio">MY PORTFOLIO</a>
+</div></div>
+        </section>
+        <section id="portfolio">
+            <div class="titletext"><p>Portfolio</p>
+            <hr/>
+            <div id="buttons">
+<div><button>ALL</button><button>WEB DESIGN</button></div>
+<div><button>PHOTOGRAPHY</button><button>PRODUCT DESIGN</button></div>
+            </div></div>
+            <div id="images">
+                <div class="group">
+                        <img src="./Imgs/01-large.jpg">
+                        <img src="./Imgs/02-large.jpg">
+                        <img src="./Imgs/03-large.jpg">
+                        <img src="./Imgs/04-large.jpg">
+                </div>
+                <div class="group">
+                        <img src="./Imgs/05-large.jpg">
+                        <img src="./Imgs/06-large.jpg">
+                        <img src="./Imgs/07-large.jpg">
+                        <img src="./Imgs/08-large.jpg">
+                </div>
+                <div class="group">
+                        <img src="./Imgs/09-large.jpg">
+                        <img src="./Imgs/10-large.jpg">
+                        <img src="./Imgs/11-large.jpg">
+                        <img src="./Imgs/12-large.jpg">
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="titletext"><p>Get In Touch</p>
+            <hr/>
+        </div>
+        <div id="name"><input type="text" placeholder="Name"><input type="email" placeholder="Email"></div>
+        <input placeholder="Message" type="text" id="mes">
+        <a id="send">SEND MESSAGE</a>
+        <p style="margin-top:80px">
+            <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-instagram"></i>
+        </p>
+        </section>
+</main>
+<footer>
+    <p id="copy">© Copyright. All rights reserved | Designed by TemplateWire</p>
+    <div id="ad"><img src="./Imgs/elegantthemes-900x120 (1).jpg"></div>
+</footer>
+      <script src="index.js"></script>
+</body>
+</html>
